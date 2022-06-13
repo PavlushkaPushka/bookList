@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    padding-top: auto;
+    padding: 8px 20px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+}
