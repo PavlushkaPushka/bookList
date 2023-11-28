@@ -6,7 +6,7 @@ function Info({ setActive, modalInside, setBook, books }) {
     return (
         <div className="header">
             <div className="info">
-                <p>In this page you can add some book</p>
+                <p>On this page you can add some book</p>
             </div>
             <div className="button">
                 <ButtonCreate setActive={setActive} modalInside={modalInside} setBook={setBook} books={books} />
