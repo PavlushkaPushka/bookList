@@ -21,11 +21,11 @@ function App() {
 
   console.log(books)
 
-  useEffect(() => {
-    const raw = localStorage.getItem('books') || []
-    console.log(JSON.parse(raw))
-    setBook(JSON.parse(raw))
-  }, []);
+  // useEffect(() => {
+  //   const raw = localStorage.getItem('books') || []
+  //   console.log(JSON.parse(raw))
+  //   setBook(JSON.parse(raw))
+  // }, []);
 
 
   //helllo
