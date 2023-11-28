@@ -11,8 +11,8 @@
     transition: 0.5s;
 }
 
-.container .card .box .content a:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    background: rgb(126, 42, 42);
+/* .container .card .box .content a:hover { */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); */
+    /* background: rgb(126, 42, 42); */
     /* color: #000; */
-}
+/* } */
