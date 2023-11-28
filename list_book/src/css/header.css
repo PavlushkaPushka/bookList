@@ -1,9 +1,11 @@
 .header {
+    margin-top: 2em;
     display: flex;
     justify-content: center;
 }
 
 .info {
+
     padding-top: auto;
     padding: 8px 20px;
 }
