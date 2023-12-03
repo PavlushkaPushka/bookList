@@ -50,7 +50,7 @@ function App() {
           books={books} />
 
 
-        {books.length > 0 ? <CardList books={books} active={modalActive} setActive={setModalActive} modalInside={setModalInside} /> : <div className="not__found">"Books not found"</div>}
+        {books.length > 0 ? <CardList books={books} active={modalActive} setActive={setModalActive} modalInside={setModalInside} /> : <div className="not__found">"Books not found for check gegw it, sorry, git"</div>}
 
 
         <Modal
