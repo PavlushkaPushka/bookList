@@ -21,14 +21,7 @@ function App() {
 
   console.log(books)
 
-  // useEffect(() => {
-  //   const raw = localStorage.getItem('books') || []
-  //   console.log(JSON.parse(raw))
-  //   setBook(JSON.parse(raw))
-  // }, []);
 
-
-  //helllo
   useEffect(() => {
     localStorage.setItem('books', JSON.stringify(books))
   }, [books]);
@@ -50,7 +43,7 @@ function App() {
           books={books} />
 
 
-        {books.length > 0 ? <CardList books={books} active={modalActive} setActive={setModalActive} modalInside={setModalInside} /> : <div className="not__found">"Books not found for check gegw it, sorry, git"</div>}
+        {books.length > 0 ? <CardList books={books} active={modalActive} setActive={setModalActive} modalInside={setModalInside} /> : <div className="not__found">"Books not found"</div>}
 
 
         <Modal
