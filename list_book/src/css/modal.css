@@ -190,8 +190,25 @@ input:-webkit-autofill:active {
 
 .submit.add {
     background-color: rgb(70 134 13);
+    transition: 0.5s;
 }
 
 .submit.cancel {
     background-color: rgb(126, 42, 42);
+    transition: 0.5s;
+}
+
+
+.submit.add:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: rgb(70, 180, 13);
+    /* background: #fff; */
+    color: white;
+}
+
+.submit.cancel:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: rgb(180, 42, 42);
+    /* background: #fff; */
+    color: white;
 }
