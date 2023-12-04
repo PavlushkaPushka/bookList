@@ -193,18 +193,34 @@ input:-webkit-autofill:active {
     transition: 0.5s;
 }
 
-.submit.cancel {
-    background-color: rgb(126, 42, 42);
-    transition: 0.5s;
-}
-
-
 .submit.add:hover {
     background: rgb(70, 180, 13);
     color: white;
 }
 
+
+.submit.cancel {
+    background-color: rgb(126, 42, 42);
+    transition: 0.5s;
+}
+
 .submit.cancel:hover {
     background: rgb(180, 42, 42);
+    color: white;
+}
+
+.submit.addBook {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8px 20px;
+    background-color: rgb(70 134 13);
+    transition: 0.5s;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.submit.addBook:hover {
+    background: rgb(70, 180, 13);
     color: white;
 }
