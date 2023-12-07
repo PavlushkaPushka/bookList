@@ -14,7 +14,9 @@ function ButtonCreate({ setActive, modalInside, setBook, books }) {
     }
 
     return (
-        <a href="/#" onClick={() => { setActive(true); modalInside(() => (<Form setActive={setActive} onCreate={addBook} setBook={setBook} books={books} />)) }}>Add a new book</a>
+        <a href="/#" 
+        onClick={() => { setActive(true); modalInside(() => (<Form setActive={setActive} onCreate={addBook} setBook={setBook} books={books} />)) }}
+        >Add a new book</a>
     );
 }
 
