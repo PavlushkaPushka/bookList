@@ -17,6 +17,8 @@ function App() {
     //   bookName: "A song of ice and fire",
     //   id: Date.now()
     // }
+
+    // just to check
   ])
 
   console.log(books)
