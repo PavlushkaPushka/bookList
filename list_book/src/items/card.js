@@ -1,6 +1,5 @@
 import "./../css/card.css"
 import ModalForDelete from "./modalForDelete";
-import ButtonDelete from "./buttonDelete";
 
 function Card({ aboutBook, setActive, modalInside }) {
 
@@ -14,13 +13,11 @@ function Card({ aboutBook, setActive, modalInside }) {
                         <h2>{aboutBook.author}</h2>
                         <div className="buttons_container">
                             <button className="submit change_card" type="button">Change</button>
-                            {/* <button className="submit delete_card" type="button" onClick={() => {
-                                setActive(true); //////////////// остановился здесь!!!
-                                modalInside(() => (<ModalForDelete setActive={setActive} book={book} />))
-                            }}>Delete</button> */}
+                            <button className="submit delete_card" type="button" onClick={() => {
+                                setActive(true);
+                                modalInside(() => (<ModalForDelete setActive={setActive} book={aboutBook} />))
+                            }}>Delete</button>
                         </div>
-
-                        {/* <ButtonDelete setActive={setActive} modalInside={modalInside} book={aboutBook} /> */}
                     </div>
                 </div>
             </div>

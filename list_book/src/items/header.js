@@ -1,6 +1,5 @@
 import "./../css/header.css"
 import Form from "./form"
-import ButtonCreate from "./buttonCreate";
 
 function Info({ setActive, modalInside, setBook, books }) {
 
