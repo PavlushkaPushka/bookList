@@ -5,7 +5,8 @@ import "./styles.css"
 import Modal from "./items/modal";
 import { useState, useEffect } from "react"
 
-
+// { div ? 1 : 2}
+// { !div ? 1 : 2}
 
 function App() {
 
@@ -21,8 +22,6 @@ function App() {
     // just to check
   ])
 
-  console.log(books)
-
 
   useEffect(() => {
     localStorage.setItem('books', JSON.stringify(books))
@@ -37,7 +36,7 @@ function App() {
   return (
     <Context.Provider value={{ removeBook }}>
       <div className="some">
-        
+
         <Header
           setActive={setModalActive}
           modalInside={setModalInside}
