@@ -70,6 +70,11 @@
     width: 30%;
 }
 
+.buttons_container .save_changes_card {
+    height: 45px;
+    width: 30%;
+}
+
 
 .submit.delete_card {
     background-color: rgb(126, 42, 42);
@@ -91,5 +96,15 @@
 
 .submit.change_card:hover {
     background: rgb(247, 210, 26);
+    /* color: white; */
+}
+
+.submit.save_changes_card {
+    background-color: rgb(84, 167, 30);
+    transition: 0.5s;
+}
+
+.submit.save_changes_card:hover {
+    background: rgb(70, 182, 70);
     /* color: white; */
 }
