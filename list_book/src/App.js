@@ -37,7 +37,7 @@ function App() {
   return (
     <Context.Provider value={{ removeBook }}>
       <div className="some">
-        hello worldddddddddd
+        
         <Header
           setActive={setModalActive}
           modalInside={setModalInside}
