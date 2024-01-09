@@ -14,6 +14,7 @@ function Card({ aboutBook, setActive, modalInside }) {
         <div className="container">
             <div className="card">
                 <div className="box">
+                    
                     {buttonChange ? <ButtonChangeNotActive aboutBook={aboutBook} setActive={setActive} modalInside={modalInside}/> : <ButtonChangeActive aboutBook={aboutBook} setActive={setActive} modalInside={modalInside}/>}
                 </div>
             </div>
@@ -27,8 +28,12 @@ function Card({ aboutBook, setActive, modalInside }) {
 
         return (
             <div className="content">
-                <h3>{aboutBook.bookName}</h3>
-                <h2>{aboutBook.author}</h2>
+                <div className="attributes">
+                    <h2>{aboutBook.author}</h2>h
+                    <h3>{aboutBook.bookName}</h3>
+                </div>
+
+                <img src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" width="100" height="100"></img>
                     <div className="buttons_container">
                         <button className="submit change_card" type="button" onClick={() => {
                             setButtonChange(true);

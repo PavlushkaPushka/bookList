@@ -32,6 +32,9 @@ function Form({ setActive, onCreate }) {
                     <input id="lastname" class="input" type="text" placeholder=" " value={value_2} onChange={event => setValue_2(event.target.value)} />
                     <label for="lastname" class="placeholder">Author</label>
                 </div>
+                <div class="input-container ic3">
+                    <input id="lastname" class="input" type="file" placeholder=" "/>
+                </div>
                 <div className="submit__container">
                     <button type="submit" class="submit add">Add</button>
                     <button type="reset" class="submit cancel" onClick={() => setActive()}>Cancel</button>

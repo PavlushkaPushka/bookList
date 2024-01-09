@@ -108,3 +108,13 @@
     background: rgb(70, 182, 70);
     /* color: white; */
 }
+
+.attributes {
+    width: 50%;
+}
+
+#card {
+    width:300px;
+    background-color: red;
+    float: left;
+}
