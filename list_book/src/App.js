@@ -46,8 +46,6 @@ function App() {
 
         {books.length > 0 ? <CardList books={books} active={modalActive} setActive={setModalActive} modalInside={setModalInside} /> : <div className="not__found">"Books not found"</div>}
 
-        <img src="https://серебро.рф/img/placeholder.png" width="100" height="100" alt="photo"></img>
-
         <Modal
           active={modalActive}
           setActive={setModalActive}

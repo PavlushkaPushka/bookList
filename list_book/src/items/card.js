@@ -14,7 +14,6 @@ function Card({ aboutBook, setActive, modalInside }) {
         <div className="container">
             <div className="card">
                 <div className="box">
-                    
                     {buttonChange ? <ButtonChangeNotActive aboutBook={aboutBook} setActive={setActive} modalInside={modalInside}/> : <ButtonChangeActive aboutBook={aboutBook} setActive={setActive} modalInside={modalInside}/>}
                 </div>
             </div>
@@ -29,11 +28,9 @@ function Card({ aboutBook, setActive, modalInside }) {
         return (
             <div className="content">
                 <div className="attributes">
-                    <h2>{aboutBook.author}</h2>h
+                    <h2>{aboutBook.author}</h2>
                     <h3>{aboutBook.bookName}</h3>
                 </div>
-
-                <img src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" width="100" height="100"></img>
                     <div className="buttons_container">
                         <button className="submit change_card" type="button" onClick={() => {
                             setButtonChange(true);
@@ -50,19 +47,15 @@ function Card({ aboutBook, setActive, modalInside }) {
     function ButtonChangeNotActive ({ aboutBook, setActive, modalInside }) {
         return (
             <div className="content">
-                <div class="input-container ic11">
-                    <input id="Book's_name" class="input" type="text" placeholder=" " value={value_1} />
-                    <label for="Book's_name" class="placeholder">Book's name</label>
+                <div class="input-containerr ic22">
+                    <input id="Book's_name" class="input_in_card author" type="text" placeholder=" " value={value_2} />
+                    {/* <label for="Book's_name" class="placeholder">Author</label> */}
                 </div>
-
-                <div class="input-container ic2">
-                    <input id="Book's_name" class="input" type="text" placeholder=" " value={value_2} />
-                    <label for="Book's_name" class="placeholder">Book's name</label>
+                <div class="input-containerr ic11">
+                    <input id="lastname" class="input_in_card booksName" type="text" placeholder=" " value={value_1} />
+                    {/* <label for="lastname" class="placeholder">Book's name</label> */}
                 </div>
                     <div className="buttons_container">
-
-
-   
                     <button className="submit save_changes_card" type="button">Save</button>
                         <button className="submit delete_card" type="button" onClick={() => {
                             setButtonChange(false);

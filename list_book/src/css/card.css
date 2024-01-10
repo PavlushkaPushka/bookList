@@ -33,6 +33,7 @@
 } */
 
 .container .card .box .content {
+    margin-left: 5px;
     padding: 20px;
 }
 
@@ -113,8 +114,35 @@
     width: 50%;
 }
 
-#card {
-    width:300px;
-    background-color: red;
-    float: left;
+
+.input_in_card {
+    margin-bottom: 0;
+    background-color: #232427;
+    border-radius: 12px;
+    border: 0;
+
+    /* box-sizing: border-box; */
+    color: #eee;
+    /* height: 50%; */
+    outline: 0;
+    /* padding: 4px 20px 0; */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.input_in_card.author{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input_in_card.booksName{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.input-container {
+    /* height: 12px; */
+    position: relative;
+    width: 100%;
 }
